@@ -356,8 +356,9 @@ GameObject:
   - component: {fileID: 1539828244}
   - component: {fileID: 1539828243}
   - component: {fileID: 1539828245}
+  - component: {fileID: 1539828246}
   m_Layer: 0
-  m_Name: Slime_monster_spritesheet_6
+  m_Name: Test-Slime
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -440,8 +441,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 870c218a0b2f66e4fbbe89004fbd4929, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 2
   body: {fileID: 1539828245}
+  animator: {fileID: 1539828246}
 --- !u!58 &1539828244
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -479,3 +481,22 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!95 &1539828246
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1539828240}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f1d3c4fc5eca7f8499ba2f0e02f160b0, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

@@ -7,6 +7,8 @@ public class BlobMovement : MonoBehaviour
     public float speed;
     public Rigidbody2D body;
 
+    public Animator animator;
+
     void Start()
     {
 
@@ -18,6 +20,8 @@ public class BlobMovement : MonoBehaviour
         float v = Input.GetAxisRaw("Vertical");
 
         body.velocity = new Vector2(h * speed, v * speed);
+
+        animator.SetFloat("Speed", (h));
 
     }
     
