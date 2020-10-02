@@ -10,11 +10,7 @@ public class BlobMovement : MonoBehaviour
 
     public Animator animator;
 
-    void Start()
-    {
-
-    }
-
+    //Update called once per frame
     void Update()
     {
         //GetAxisRaw will return value in range -1 to 1 depending on input
@@ -39,7 +35,8 @@ public class BlobMovement : MonoBehaviour
             Flip();
         }
         
-        animator.SetFloat("isMoving", Mathf.Abs(horizontalMove));    //If horizontalMovement > 0, then we know we are moving so apply animation
+        animator.SetFloat("isMovingHor", Mathf.Abs(horizontalMove));    //If horizontal/verticalMovement > 0, then we know we are moving so apply animation
+        animator.SetFloat("isMovingVer", verticalMove);
 
     }
 
