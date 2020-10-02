@@ -341,7 +341,7 @@ PolygonCollider2D:
       - {x: 9.597276, y: -3.5916932}
       - {x: 10.299629, y: -3.7278519}
       - {x: 10.963844, y: -3.8788195}
-      - {x: 11.403869, y: -3.917719}
+      - {x: 11.423274, y: -3.988595}
       - {x: 11.402784, y: 7.6000004}
 --- !u!1 &1539828240
 GameObject:
@@ -441,7 +441,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 870c218a0b2f66e4fbbe89004fbd4929, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  Speed: 2
   body: {fileID: 1539828245}
   animator: {fileID: 1539828246}
 --- !u!58 &1539828244
